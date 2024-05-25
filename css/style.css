@@ -1,9 +1,10 @@
-body {
+body {  
   margin: 0;
   padding: 0;
   background: url("../assets/bg.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: repeat;
   overflow: hidden;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;

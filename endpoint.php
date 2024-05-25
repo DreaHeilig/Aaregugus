@@ -1,7 +1,5 @@
 <?php
 
-echo "Hello World";
-
 require_once 'config.php';
 
 try {
@@ -36,21 +34,21 @@ try {
         $averages[$date] = round($result['averageTravelTime']);
     }
 
-    // Convert the arrays to JSON
-    $recentDataJson = json_encode($recentData, JSON_PRETTY_PRINT);
-    $averagesJson = json_encode($averages, JSON_PRETTY_PRINT);
+    // Prepare the response data
+    $responseData = [
+        'recentData' => $recentData,
+        'averages' => $averages
+    ];
 
-    // Display the JSON results
-    echo '<pre>';
-    echo "Most Recent Entry (JSON):\n";
-    echo $recentDataJson;
-    echo "\n\nAverage Travel Times for the Last 3 Days (JSON):\n";
-    echo $averagesJson;
-    echo '</pre>';
+    // Set the content type to JSON
+    header('Content-Type: application/json');
+
+    // Return the JSON encoded data
+    echo json_encode($responseData, JSON_PRETTY_PRINT);
 
 } catch (PDOException $e) {
     // Handle any errors
-    echo 'Error: ' . $e->getMessage();
+    echo json_encode(['error' => $e->getMessage()]);
 }
 
 ?>
