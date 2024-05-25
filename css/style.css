@@ -184,6 +184,20 @@ h2 {
   padding-left: 150px;
 }
 
+.stat-value {
+  font-size: 24px;
+  line-height: 2; /* Set line height to 1 to prevent pushing downwards */
+  margin: 0; /* Reset margin to prevent any additional spacing */
+  padding: 0; /* Reset padding to prevent any additional spacing */
+}
+
+#speedValueKm,
+#speedValueKnots,
+#temperatureValue {
+  margin-left: 2em;
+  margin-right: 0.3em;
+}
+
 .aos-item {
   display: flex;
   padding-left: 150px;

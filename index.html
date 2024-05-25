@@ -62,24 +62,24 @@
         <div class="text-container">
             <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
             <div class="time-container">
-                <h1 class="time-text">3 Stunden und 20 Minuten</h1>
+                <h1 class="time-text"><span id="timeHour"></span> Stunden und <span id="timeMinute"></span> Minuten</h1>
                 <small class="destination">in Bern an</small>
             </div>
             <div class="stats-container">
                 <div class="stat">
-                    <p class="stat-label">Fahrtgeschwindigkeit in km/h:</p>
-                    <p class="stat-value">12 km/h</p>
+                    <p class="stat-label">Fahrtgeschwindigkeit in km/h: </p>
+                    <p class="stat-value" id="speedValueKm"></p><p class="stat-value"> km/h</p>
                 </div>
                 <div class="stat">
-                    <p class="stat-label">Fahrtgeschwindigkeit in Seeknoten:</p>
-                    <p class="stat-value">6.7 Knoten</p>
+                    <p class="stat-label">Fahrtgeschwindigkeit in Seeknoten: </p>
+                    <p class="stat-value" id="speedValueKnots"></p><p class="stat-value"> Knoten</p>
                     <a href="result.html">
                         <button class="compare-button">Vergleich</button>
                     </a>
                 </div>
                 <div class="stat">
-                    <p class="stat-label">Temperatur Kielwasser:</p>
-                    <p class="stat-value">10.5 °C</p>
+                    <p class="stat-label">Temperatur Kielwasser: </p>
+                    <p class="stat-value" id="temperatureValue"></p><p class="stat-value"> °C</p>
                 </div>
             </div>
         </div>

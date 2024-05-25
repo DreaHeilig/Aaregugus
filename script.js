@@ -1,3 +1,25 @@
+// Function to update travel time, speed, and temperature in HTML
+function updateTravelData(recentData) {
+    // Update travel time
+    const travelTimeInMinutes = recentData.travelTime;
+    const hours = Math.floor(travelTimeInMinutes / 60);
+    const minutes = travelTimeInMinutes % 60;
+    document.getElementById('timeHour').innerText = hours;
+    document.getElementById('timeMinute').innerText = minutes;
+
+    // Update speed in km/h
+    const speedKmPerHour = Math.round(recentData.speed);
+    document.getElementById('speedValueKm').innerText = speedKmPerHour;
+
+    // Convert speed to knots
+    const speedKnots = Math.round(speedKmPerHour / 1.852);
+    document.getElementById('speedValueKnots').innerText = speedKnots;
+
+    // Update temperature
+    const temperature = recentData.temperature;
+    document.getElementById('temperatureValue').innerText = temperature;
+}
+
 async function fetchData() {
     const url = 'https://568900-4.web.fhgr.ch/endpoint.php';
 
@@ -20,8 +42,8 @@ async function fetchData() {
         console.log('Recent Data:', recentData);
         console.log('Averages:', averages);
 
-        // You can now use recentData and averages as needed in your application
-        // For example, update the UI or perform further calculations
+        // Update travel data in HTML
+        updateTravelData(recentData);
 
     } catch (error) {
         // Handle any errors that occurred during the fetch
