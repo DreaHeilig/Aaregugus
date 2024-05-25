@@ -10,82 +10,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="assets/top.png" class="full-width" style="margin-top: -10px;">
+    <img src="assets/top.png" class="full-width top-image">
 
     <center>
-    <img src="assets/logo.png" style="width: 60px;margin-top: -100px;">
+        <img src="assets/logo.png" class="logo">
     </center>
 
     <div class="leaf">
         <div>
-            <img src="assets/boot1.png" height="100px" width="100px"></img>
+            <img src="assets/boot1.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot3.png" height="100px" width="100px"></img>
+            <img src="assets/boot3.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot5.png" height="120px" width="120px" ></img>
+            <img src="assets/Boot5.png" class="boot-img-large"></img>
         </div>
         <div>
-            <img  src="assets/boot6.png" height="100px" width="100px"></img>
+            <img src="assets/Boot6.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot7.png" height="100px" width="100px"></img>
+            <img src="assets/boot7.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot8.png" height="100px" width="100px">
+            <img src="assets/boot8.png" class="boot-img"></img>
         </div>
     </div>
      
     <div class="leaf leaf1">
         <div>
-            <img src="assets/boot8.png" height="120px" width="120px">
+            <img src="assets/boot8.png" class="boot-img-large"></img>
         </div>
         <div>
-            <img src="assets/boot7.png" height="100px" width="100px"></img>
+            <img src="assets/boot7.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot3.png" height="100px" width="100px"></img>
+            <img src="assets/boot3.png" class="boot-img"></img>
         </div>
         <div>
-            <img  src="assets/boot6.png" height="100px" width="100px"></img>
+            <img src="assets/Boot6.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot5.png" height="100px" width="100px" ></img>
+            <img src="assets/Boot5.png" class="boot-img"></img>
         </div>
         <div>
-            <img src="assets/boot1.png" height="100px" width="100px"></img>
+            <img src="assets/boot1.png" class="boot-img"></img>
         </div>
     </div>
 
-    <div class="w-100" >
-    	<div style="padding: 50px;">
-    		<p style="color: #363131;padding-left: 150px;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);font-size: 20px;font-weight: 600;">Wenn du jetzt in Thun los fährst, kommst du in</p>
-    		<div style="display: flex;">
-    		<h1 style="color: #363131;padding-left: 150px;font-size: 56px;margin-top: -20px;font-weight: 300;">3 Stunden und 20 Minuten</h1>
-    		<small style="font-size: 16px;margin-top: 40px;">in Bern an</small>
-    	</div>
-    	<div class="w-100">
-        	<div style="display: flex;padding-left: 150px;">
-        		<p style="width: 30%;">Fahrtgeschwindigkeit in km/h</p>
-        		<p style="width: 40%;font-weight: 700;">12 km/h</p>
-        	</div>
-        	<div style="display: flex;padding-left: 150px;">
-        		<p style="width: 30%;">Fahrtgeschwindigkeit in Seeknoten</p>
-        		<p style="width: 20%;font-weight: 700;">6.7 Knoten</p>
-        		<a href="result.html">
-        		<button style="background: #ECA051;border: none;padding: 15px;border-radius: 40px;">Vergleich</button>
-        	</a>
-        	</div>
-        	<div style="display: flex;padding-left: 150px;">
-        		<p style="width: 30%;">Temperatur Kielwasser</p>
-        		<p style="width: 40%;font-weight: 700;">10.5 °C</p>
-        	</div>
+    <div class="content">
+        <div class="text-container">
+            <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
+            <div class="time-container">
+                <h1 class="time-text">3 Stunden und 20 Minuten</h1>
+                <small class="destination">in Bern an</small>
+            </div>
+            <div class="stats-container">
+                <div class="stat">
+                    <p class="stat-label">Fahrtgeschwindigkeit in km/h:</p>
+                    <p class="stat-value">12 km/h</p>
+                </div>
+                <div class="stat">
+                    <p class="stat-label">Fahrtgeschwindigkeit in Seeknoten:</p>
+                    <p class="stat-value">6.7 Knoten</p>
+                    <a href="result.html">
+                        <button class="compare-button">Vergleich</button>
+                    </a>
+                </div>
+                <div class="stat">
+                    <p class="stat-label">Temperatur Kielwasser:</p>
+                    <p class="stat-value">10.5 °C</p>
+                </div>
+            </div>
         </div>
-    	</div>
-        
     </div>
     <img src="assets/bottom.png" class="full-width footer-image">
-
 </body>
 </html>

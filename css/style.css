@@ -1,37 +1,36 @@
 body {
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
-            background: url("../assets/bg.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-             overflow: hidden; /* Hide overflow to prevent scrollbars */
-              font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-        }
-        .full-width {
-            width: 100%;
-            display: block;
-            margin: 0;
-            padding: 0;
-        }
-        .w-100{
-        	width: 100%;
-        }
-        .footer-image {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
-     
-
-section {
-  height: 100%;
+.full-width {
   width: 100%;
-  position: absolute;
-  background: radial-gradient(#333, #000);
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.top-image {
+  margin-top: -10px;
+}
+
+.logo {
+  width: 60px;
+  margin-top: -100px;
+}
+
+.footer-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .leaf {
@@ -92,26 +91,26 @@ section {
 
 @keyframes fall {
   0% {
-    opacity: 1;
-    left: -10%;
-    transform: translateY(20px) rotate(0deg);
+      opacity: 1;
+      left: -10%;
+      transform: translateY(20px) rotate(0deg);
   }
   20% {
-    opacity: 0.8;
-    transform: translateY(-20px) rotate(45deg);
+      opacity: 0.8;
+      transform: translateY(-20px) rotate(45deg);
   }
   40% {
-    transform: translateY(-20px) rotate(90deg);
+      transform: translateY(-20px) rotate(90deg);
   }
   60% {
-    transform: translateY(-20px) rotate(135deg);
+      transform: translateY(-20px) rotate(135deg);
   }
   80% {
-    transform: translateY(-20px) rotate(180deg);
+      transform: translateY(-20px) rotate(180deg);
   }
   100% {
-    left: 110%;
-    transform: translateY(-20px) rotate(225deg);
+      left: 110%;
+      transform: translateY(-20px) rotate(225deg);
   }
 }
 
@@ -119,15 +118,127 @@ section {
   transform: rotateX(180deg);
 }
 
-h2{
-    position:absolute ;
-    top:40%;
-    width:100%;
-    font-family: 'Courgette', cursive;
-    font-size:4em;
-    text-align:center;
-    transform:translate ;
-    color:#fff;
-    transform:translateY -50%;
+h2 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  font-family: 'Courgette', cursive;
+  font-size: 4em;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
 }
 
+.boot-img {
+  height: 100px;
+  width: 100px;
+}
+
+.boot-img-large {
+  height: 120px;
+  width: 120px;
+}
+
+.content {
+  width: 100%;
+}
+
+.text-container {
+  padding: 20px;
+}
+
+.info-text {
+  color: #363131;
+  padding-left: 150px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.time-container {
+  display: flex;
+}
+
+.time-text {
+  color: #363131;
+  padding-left: 150px;
+  font-size: 56px;
+  margin-top: -20px;
+  font-weight: 300;
+}
+
+.destination {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+}
+
+.stat {
+  display: flex;
+  padding-left: 150px;
+}
+
+.aos-item {
+  display: flex;
+  padding-left: 150px;
+}
+
+.wave-background {
+  background: url('../assets/1stwave.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 30%;
+  padding-left: 10px;
+}
+
+.bt-background {
+  text-align: center;
+}
+
+.bt1 {
+  background: url('../assets/bt1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 7%;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+.bt2 {
+  background: url('../assets/bt2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 7%;
+  margin-left: -20px;
+  margin-top: -5px;
+}
+
+.bt3 {
+  background: url('../assets/bt3.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 7%;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+.bt-text {
+  margin-top: 11px;
+}
+
+.compare-button {
+  background: #ECA051;
+  border: none;
+  padding: 15px;
+  border-radius: 40px;
+  margin-left: 150px;
+}
