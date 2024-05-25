@@ -1,0 +1,133 @@
+body {
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            background: url("../assets/bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+             overflow: hidden; /* Hide overflow to prevent scrollbars */
+              font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+        .full-width {
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        .w-100{
+        	width: 100%;
+        }
+        .footer-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+     
+
+section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(#333, #000);
+}
+
+.leaf {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.leaf div {
+  position: absolute;
+  display: block;
+}
+
+.leaf div:nth-child(1) {
+  top: 20%;
+  animation: fall 15s linear infinite;
+  animation-delay: -2s;
+}
+
+.leaf div:nth-child(2) {
+  top: 70%;
+  animation: fall 15s linear infinite;
+  animation-delay: -4s;
+}
+
+.leaf div:nth-child(3) {
+  top: 10%;
+  animation: fall 20s linear infinite;
+  animation-delay: -7s;
+}
+
+.leaf div:nth-child(4) {
+  top: 50%;
+  animation: fall 18s linear infinite;
+  animation-delay: -5s;
+}
+
+.leaf div:nth-child(5) {
+  top: 85%;
+  animation: fall 14s linear infinite;
+  animation-delay: -5s;
+}
+
+.leaf div:nth-child(6) {
+  top: 15%;
+  animation: fall 16s linear infinite;
+  animation-delay: -10s;
+}
+
+.leaf div:nth-child(7) {
+  top: 90%;
+  animation: fall 15s linear infinite;
+  animation-delay: -4s;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 1;
+    left: -10%;
+    transform: translateY(20px) rotate(0deg);
+  }
+  20% {
+    opacity: 0.8;
+    transform: translateY(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateY(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateY(-20px) rotate(135deg);
+  }
+  80% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    left: 110%;
+    transform: translateY(-20px) rotate(225deg);
+  }
+}
+
+.leaf1 {
+  transform: rotateX(180deg);
+}
+
+h2{
+    position:absolute ;
+    top:40%;
+    width:100%;
+    font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY -50%;
+}
+
