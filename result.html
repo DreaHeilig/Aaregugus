@@ -20,35 +20,35 @@
         <div class="text-container">
             <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
             <div class="time-container">
-                <h1 class="time-text">3 Stunden und 20 Minuten</h1>
+                <h1 class="time-text"><span id="timeHour"></span> Stunden und <span id="timeMinute"></span> Minuten</h1>
                 <small class="destination">in Bern an</small>
             </div>
             <div class="w-100">
                 <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="2000">
-                    <div class="wave-background">
+                    <div class="wave-background" id="wave-background1">
                         <p>Gestern</p>
                     </div>
                     <div class="bt-background bt1">
-                        <p class="bt-text">3h50</p>
+                        <p class="bt-text"><p id="bt1Hours"></p><p class="btFix">h</p><p id="bt1Minutes"></p></p>
                     </div>
                 </div>
                 <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="2500">
-                    <div class="wave-background">
+                    <div class="wave-background" id="wave-background2">
                         <p>Vorgestern</p>
                     </div>
                     <div class="bt-background bt2">
-                        <p class="bt-text">3h27</p>
+                        <p class="bt-text"><p id="bt2Hours"></p><p class="btFix">h</p><p id="bt2Minutes"></p></p>
                     </div>
                     <a href="index.html">
                         <button class="compare-button">Zurück</button>
                     </a>
                 </div>
                 <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="3000">
-                    <div class="wave-background">
+                    <div class="wave-background" id="wave-background3">
                         <p>Vorvorgestern</p>
                     </div>
                     <div class="bt-background bt3">
-                        <p class="bt-text">3h47</p>
+                        <p class="bt-text"><p id="bt3Hours"></p><p class="btFix">h</p><p id="bt3Minutes"></p></p>
                     </div>
                 </div>
             </div>
@@ -60,5 +60,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="scriptResults.js"></script>
 </body>
 </html>
