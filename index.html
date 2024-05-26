@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <img src="assets/top.png" class="full-width top-image">
 
@@ -36,7 +38,7 @@
             <img src="assets/boot8.png" class="boot-img"></img>
         </div>
     </div>
-     
+
     <div class="leaf leaf1">
         <div>
             <img src="assets/boot8.png" class="boot-img-large"></img>
@@ -60,31 +62,41 @@
 
     <div class="content">
         <div class="text-container">
-            <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
             <div class="time-container">
+                <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
                 <h1 class="time-text"><span id="timeHour"></span> Stunden und <span id="timeMinute"></span> Minuten</h1>
                 <small class="destination">in Bern an</small>
             </div>
-            <div class="stats-container">
-                <div class="stat">
-                    <p class="stat-label">Fahrtgeschwindigkeit in km/h: </p>
-                    <p class="stat-value" id="speedValueKm"></p><p class="stat-value"> km/h</p>
+            <div id="stats-wrapper">
+                <div class="stats-container">
+                    <div class="stat">
+                        <p class="stat-label">Fahrtgeschwindigkeit in km/h: </p>
+                        <p class="stat-value" id="speedValueKm"></p>
+                        <p class="stat-value"> km/h</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Fahrtgeschwindigkeit in Seeknoten: </p>
+                        <p class="stat-value" id="speedValueKnots"></p>
+                        <p class="stat-value"> Knoten</p>
+
+                    </div>
+                    <div class="stat">
+                        <p class="stat-label">Temperatur Kielwasser: </p>
+                        <p class="stat-value" id="temperatureValue"></p>
+                        <p class="stat-value"> °C</p>
+                    </div>
                 </div>
-                <div class="stat">
-                    <p class="stat-label">Fahrtgeschwindigkeit in Seeknoten: </p>
-                    <p class="stat-value" id="speedValueKnots"></p><p class="stat-value"> Knoten</p>
-                    <a href="result.html">
-                        <button class="compare-button">Vergleich</button>
-                    </a>
-                </div>
-                <div class="stat">
-                    <p class="stat-label">Temperatur Kielwasser: </p>
-                    <p class="stat-value" id="temperatureValue"></p><p class="stat-value"> °C</p>
-                </div>
+                <a href="result.html">
+                    <button class="compare-button">Vergleich</button>
+                </a>
             </div>
         </div>
     </div>
+
+
+
     <img src="assets/bottom.png" class="full-width footer-image">
     <script src="script.js"></script>
 </body>
+
 </html>

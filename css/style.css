@@ -1,4 +1,4 @@
-body {  
+body {
   margin: 0;
   padding: 0;
   background: url("../assets/bg.png");
@@ -92,26 +92,31 @@ body {
 
 @keyframes fall {
   0% {
-      opacity: 1;
-      left: -10%;
-      transform: translateY(20px) rotate(0deg);
+    opacity: 1;
+    left: -10%;
+    transform: translateY(20px) rotate(0deg);
   }
+
   20% {
-      opacity: 0.8;
-      transform: translateY(-20px) rotate(45deg);
+    opacity: 0.8;
+    transform: translateY(-20px) rotate(45deg);
   }
+
   40% {
-      transform: translateY(-20px) rotate(90deg);
+    transform: translateY(-20px) rotate(90deg);
   }
+
   60% {
-      transform: translateY(-20px) rotate(135deg);
+    transform: translateY(-20px) rotate(135deg);
   }
+
   80% {
-      transform: translateY(-20px) rotate(180deg);
+    transform: translateY(-20px) rotate(180deg);
   }
+
   100% {
-      left: 110%;
-      transform: translateY(-20px) rotate(225deg);
+    left: 110%;
+    transform: translateY(-20px) rotate(225deg);
   }
 }
 
@@ -145,50 +150,64 @@ h2 {
 }
 
 .text-container {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 15%;
 }
 
 .info-text {
   color: #363131;
-  padding-left: 150px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   font-weight: 600;
+  align-self: flex-start;
 }
 
 .time-container {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  ;
 }
 
 .time-text {
   color: #363131;
-  padding-left: 150px;
   font-size: 56px;
   margin-top: -20px;
+  margin-bottom: -10px;
   font-weight: 300;
+  align-self: center;
 }
 
 .destination {
   font-size: 16px;
-  margin-top: 40px;
+  align-self: flex-end;
+}
+
+#stats-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .stats-container {
   display: flex;
   flex-direction: column;
-  padding-left: 150px;
 }
 
 .stat {
   display: flex;
-  padding-left: 150px;
 }
 
 .stat-value {
   font-size: 24px;
-  line-height: 2; /* Set line height to 1 to prevent pushing downwards */
-  margin: 0; /* Reset margin to prevent any additional spacing */
-  padding: 0; /* Reset padding to prevent any additional spacing */
+  line-height: 2;
+  /* Set line height to 1 to prevent pushing downwards */
+  margin: 0;
+  /* Reset margin to prevent any additional spacing */
+  padding: 0;
+  /* Reset padding to prevent any additional spacing */
 }
 
 #speedValueKm,
@@ -198,9 +217,21 @@ h2 {
   margin-right: 0.3em;
 }
 
+.aos-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#aos-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .aos-item {
   display: flex;
-  padding-left: 150px;
+  /* padding-left: 150px; */
 }
 
 .wave-background {
@@ -268,4 +299,24 @@ h2 {
   padding: 15px;
   border-radius: 40px;
   margin-left: 150px;
+}
+
+
+@media screen and (max-width: 683px) {
+  #stats-wrapper {
+    flex-direction: column;
+  }
+
+  .aos-wrapper {
+    flex-direction: column;
+  }
+
+  .compare-button {
+    background: #ECA051;
+    border: none;
+    padding: 15px;
+    border-radius: 40px;
+    margin-left: 0px;
+    align-self: center;
+  }
 }

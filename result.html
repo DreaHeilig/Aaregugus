@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,51 +11,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <img src="assets/top.png" class="full-width top-image">
     <center>
         <img src="assets/logo.png" class="logo">
     </center>
-    
+
     <div class="w-100">
         <div class="text-container">
-            <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
             <div class="time-container">
+                <p class="info-text">Wenn du jetzt in Thun los fährst, kommst du in</p>
                 <h1 class="time-text"><span id="timeHour"></span> Stunden und <span id="timeMinute"></span> Minuten</h1>
                 <small class="destination">in Bern an</small>
             </div>
-            <div class="w-100">
-                <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="2000">
-                    <div class="wave-background" id="wave-background1">
-                        <p>Gestern</p>
+            <div class="aos-wrapper">
+                <div id="aos-items">
+                    <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="2000">
+                        <div class="wave-background" id="wave-background1">
+                            <p>Gestern</p>
+                        </div>
+                        <div class="bt-background bt1">
+                            <p class="bt-text">
+                            <p id="bt1Hours"></p>
+                            <p class="btFix">h</p>
+                            <p id="bt1Minutes"></p>
+                            </p>
+                        </div>
                     </div>
-                    <div class="bt-background bt1">
-                        <p class="bt-text"><p id="bt1Hours"></p><p class="btFix">h</p><p id="bt1Minutes"></p></p>
+                    <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="2500">
+                        <div class="wave-background" id="wave-background2">
+                            <p>Vorgestern</p>
+                        </div>
+                        <div class="bt-background bt2">
+                            <p class="bt-text">
+                            <p id="bt2Hours"></p>
+                            <p class="btFix">h</p>
+                            <p id="bt2Minutes"></p>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="3000">
+                        <div class="wave-background" id="wave-background3">
+                            <p>Vorvorgestern</p>
+                        </div>
+                        <div class="bt-background bt3">
+                            <p class="bt-text">
+                            <p id="bt3Hours"></p>
+                            <p class="btFix">h</p>
+                            <p id="bt3Minutes"></p>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="2500">
-                    <div class="wave-background" id="wave-background2">
-                        <p>Vorgestern</p>
-                    </div>
-                    <div class="bt-background bt2">
-                        <p class="bt-text"><p id="bt2Hours"></p><p class="btFix">h</p><p id="bt2Minutes"></p></p>
-                    </div>
-                    <a href="index.html">
-                        <button class="compare-button">Zurück</button>
-                    </a>
-                </div>
-                <div class="stat aos-item" data-aos="zoom-out-right" data-aos-duration="3000">
-                    <div class="wave-background" id="wave-background3">
-                        <p>Vorvorgestern</p>
-                    </div>
-                    <div class="bt-background bt3">
-                        <p class="bt-text"><p id="bt3Hours"></p><p class="btFix">h</p><p id="bt3Minutes"></p></p>
-                    </div>
-                </div>
+                <a href="index.html">
+                    <button class="compare-button">Zurück</button>
+                </a>
             </div>
         </div>
     </div>
-    
+
     <img src="assets/bottom.png" class="full-width footer-image">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -62,4 +79,5 @@
     </script>
     <script src="scriptResults.js"></script>
 </body>
+
 </html>
